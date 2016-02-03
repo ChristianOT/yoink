@@ -15,7 +15,6 @@
  */
 package org.wallerlab.yoink.molecular.data;
 
-
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
@@ -37,17 +36,13 @@ public abstract class AbstractJaxbWriter implements FilesWriter<Object> {
 	protected Object jaxbObject;
 
 	/**
-	 * use JAXB writer to write out an instance to a file.
+	 * use JAXB writer to write out an instance
 	 * 
-	 * @param nameOfFile
-	 *            - the name of out put file
-	 * @param jaxbObject
-	 *            - the instance will be written into a file
 	 */
 	protected void marshall() {
 		try {
-			jaxbContext = JAXBContext.newInstance(Class
-					.forName(jaxbObject.getClass().getName()));
+			jaxbContext = JAXBContext.newInstance(Class.forName(jaxbObject
+					.getClass().getName()));
 			jaxbMarshaller = jaxbContext.createMarshaller();
 			jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 			marshal();
@@ -57,7 +52,7 @@ public abstract class AbstractJaxbWriter implements FilesWriter<Object> {
 			e.printStackTrace();
 		}
 	}
-	
+
 	protected abstract void marshal() throws JAXBException;
 
 }

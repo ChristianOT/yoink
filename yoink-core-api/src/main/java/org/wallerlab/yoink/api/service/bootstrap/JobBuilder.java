@@ -24,15 +24,17 @@ import org.wallerlab.yoink.api.model.bootstrap.Job;
  * 
  * @author Min Zheng
  *
- * @param <T>
- *            - the input type of Job
+ * @param <I>
+ *            - the input type of JobBuilder
+ * @param <O>
+ *            - the output type of JobBuilder           
  */
 public interface JobBuilder<I,O> {
 
 	/**
 	 * this method take the builderInput to build a job
 	 * 
-	 * @param builderInput
+	 * @param input - the input
 	 * @return {@link org.wallerlab.yoink.api.model.bootstrap.Job}
 	 */
 	Job<O> build(I input);

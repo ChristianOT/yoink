@@ -43,8 +43,8 @@ public class StringAdaptiveQMMMProcessor extends AbstractAdaptiveQMMMProcessor<S
 	/**
 	 * read in a list of requests and execute them.
 	 * 
-	 * @param requests
-	 *            - a list of files
+	 * @param input
+	 *            - input file name
 	 * @return jobs - a list of YoinkJob
 	 *         {@link org.wallerlab.yoink.api.model.bootstrap.Job}
 	 */

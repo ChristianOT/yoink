@@ -46,8 +46,8 @@ public class SerialAdaptiveQMMMProcessor extends AbstractAdaptiveQMMMProcessor<J
 	/**
 	 * read in a list of requests and execute them.
 	 * 
-	 * @param requests
-	 *            - a list of files
+	 * @param input
+	 *            - JAXBElement
 	 * @return jobs - a list of YoinkJob
 	 *         {@link org.wallerlab.yoink.api.model.bootstrap.Job}
 	 */
