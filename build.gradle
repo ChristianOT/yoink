@@ -183,6 +183,8 @@ dependencies { compile("org.springframework.boot:spring-boot-starter-batch") }
 configurations { all*.exclude module : 'spring-boot-starter-logging' }
 
 // generate one jar file for multi projects
+
+/** use bootRun instead
 subprojects.each { subproject -> evaluationDependsOn(subproject.path)}
 task allJar(type: Jar, dependsOn: subprojects.assemble) {
         zip64 = true
@@ -207,7 +209,7 @@ task allJar(type: Jar, dependsOn: subprojects.assemble) {
 }
 
 artifacts { archives allJar  }
-
+*/
 //generate one java docs for multi projects
 //command-line type: ./gradlew alljavadoc
 def exportedProjects= [
