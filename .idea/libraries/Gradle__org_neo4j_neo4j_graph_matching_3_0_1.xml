@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.neo4j:neo4j-graph-matching:3.0.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-graph-matching/3.0.1/727949b81077a44deaad01e78aade229388f7b3/neo4j-graph-matching-3.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-graph-matching/3.0.1/4448c31fe0bc54e07d431f76ffe5d2d466e21558/neo4j-graph-matching-3.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

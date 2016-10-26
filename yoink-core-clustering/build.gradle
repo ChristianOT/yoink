@@ -1,0 +1,4 @@
+dependencies {
+	compile "org.neo4j:neo4j:3.0.1"
+}
+mainClassName = 'org.wallerlab.yoink.Yoink'

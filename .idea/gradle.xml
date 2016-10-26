@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/yoink-core-adaptive" />
+            <option value="$PROJECT_DIR$/yoink-core-adaptiveProcessor" />
+            <option value="$PROJECT_DIR$/yoink-core-api" />
+            <option value="$PROJECT_DIR$/yoink-core-bootstrap" />
+            <option value="$PROJECT_DIR$/yoink-core-clustering" />
+            <option value="$PROJECT_DIR$/yoink-core-cube" />
+            <option value="$PROJECT_DIR$/yoink-core-density" />
+            <option value="$PROJECT_DIR$/yoink-core-math" />
+            <option value="$PROJECT_DIR$/yoink-core-molecular" />
+            <option value="$PROJECT_DIR$/yoink-core-regionizer" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

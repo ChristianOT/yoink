@@ -1,0 +1,54 @@
+apply plugin: 'spring-boot'
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'groovy'
+apply plugin: 'idea'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies { classpath("org.springframework.boot:spring-boot-gradle-plugin:1.1.7.RELEASE") }
+}
+
+
+repositories {
+    mavenCentral()
+    maven { url "https://m2.neo4j.org" }
+    maven { url "https://repo.spring.io/libs-release" }
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-batch:1.1.7.RELEASE'
+}
+configurations {
+    all*.exclude module: 'spring-boot-starter-logging'
+    integrationTestCompile.extendsFrom testCompile
+    integrationTestRuntime.extendsFrom testRuntime
+}
+sourceSets {
+    integrationTest {
+        java {
+            compileClasspath += main.output + test.output
+            runtimeClasspath += main.output + test.output
+            srcDir file('src/integration-test/java')
+        }
+        resources.srcDir file('src/integration-test/resources')
+    }
+}
+task integrationTest(type: Test) {
+    testClassesDir = sourceSets.integrationTest.output.classesDir
+    classpath = sourceSets.integrationTest.runtimeClasspath
+    outputs.upToDateWhen { false }
+}
+check.dependsOn integrationTest
+integrationTest.mustRunAfter test
+tasks.withType(Test) {
+    reports.html.destination = file("${reporting.baseDir}/${name}")
+}
+
+mainClassName = 'org.wallerlab.yoink.Yoink'
+
