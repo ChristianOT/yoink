@@ -15,24 +15,16 @@
  */
 package org.wallerlab.yoink.service.processor;
 
-import java.util.List;
-import java.util.Map;
-
-import javax.annotation.Resource;
-
 import org.springframework.batch.item.ItemProcessor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.wallerlab.yoink.api.model.bootstrap.Job;
-import org.wallerlab.yoink.api.model.bootstrap.JobParameter;
 import org.wallerlab.yoink.api.model.molecular.MolecularSystem;
 import org.wallerlab.yoink.api.model.regionizer.Region;
-import org.wallerlab.yoink.api.model.regionizer.Region.Name;
-import org.wallerlab.yoink.api.service.adaptive.Smoothner;
 import org.wallerlab.yoink.api.service.bootstrap.Clustering;
-import org.wallerlab.yoink.api.service.bootstrap.Wrapper;
-import org.wallerlab.yoink.api.service.regionizer.Regionizer;
 import org.wallerlab.yoink.api.service.regionizer.RegionizerMath;
 import org.wallerlab.yoink.service.clustering.InteractionSet;
+
+import javax.annotation.Resource;
+import java.util.Map;
 
 /**
  * This class is to set up and execute clustering based on DORI analysis.

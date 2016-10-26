@@ -16,18 +16,12 @@
  */
 package org.wallerlab.yoink.service.jobbuilder
 
-import org.xml_cml.schema.ObjectFactory
-
-import spock.lang.Specification;
-import org.wallerlab.yoink.api.model.bootstrap.JobParameter
-import org.wallerlab.yoink.api.*
-import org.wallerlab.yoink.api.enums.*
-import org.wallerlab.yoink.api.model.*
-import org.wallerlab.yoink.api.service.molecular.FilesReader;
-import org.wallerlab.yoink.api.model.molecular.MolecularSystem;
-import org.wallerlab.yoink.api.service.molecular.Translator
-import org.wallerlab.yoink.service.jobbuilder.JobFileBuilderImpl;
 import org.wallerlab.yoink.api.model.bootstrap.Job
+import org.wallerlab.yoink.api.model.molecular.MolecularSystem
+import org.wallerlab.yoink.api.service.molecular.FilesReader
+import org.wallerlab.yoink.api.service.molecular.Translator
+import org.xml_cml.schema.ObjectFactory
+import spock.lang.Specification
 
 class JobStringBuilderImplSpec extends Specification {
 

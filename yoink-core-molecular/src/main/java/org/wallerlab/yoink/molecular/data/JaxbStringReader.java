@@ -15,12 +15,12 @@
  */
 package org.wallerlab.yoink.molecular.data;
 
-import java.io.StringReader;
+import org.springframework.stereotype.Service;
+import org.xml_cml.schema.Cml;
 
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.JAXBException;
-import org.springframework.stereotype.Service;
-import org.xml_cml.schema.Cml;
+import java.io.StringReader;
 
 /**
  * this class is to use JAXB to read a xml string.

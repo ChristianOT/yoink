@@ -15,14 +15,9 @@
  */
 package org.wallerlab.yoink.molecular.service.calculator;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 import org.springframework.stereotype.Service;
 import org.wallerlab.yoink.api.model.molecular.Atom;
 import org.wallerlab.yoink.api.model.molecular.Coord;
-import org.wallerlab.yoink.api.model.molecular.Molecule;
 import org.wallerlab.yoink.api.service.Calculator;
 import org.wallerlab.yoink.api.service.math.Vector;
 

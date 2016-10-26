@@ -14,8 +14,13 @@
  * limitations under the License.
  */
 package org.wallerlab.yoink;
-import java.io.IOException;
 
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.core.env.StandardEnvironment;
@@ -25,9 +30,16 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.*;
 import org.wallerlab.yoink.adaptive.config.AdaptiveConfig;
+import org.wallerlab.yoink.api.model.molecular.Atom;
+import org.wallerlab.yoink.api.model.molecular.Element;
+import org.wallerlab.yoink.api.model.molecular.MolecularSystem;
+import org.wallerlab.yoink.api.model.molecular.Molecule;
 import org.wallerlab.yoink.density.config.DensityConfig;
 import org.wallerlab.yoink.math.config.MathConfig;
 import org.wallerlab.yoink.molecular.config.MolecularConfig;
+import org.wallerlab.yoink.molecular.domain.*;
+import org.wallerlab.yoink.molecular.repositories.MolecularSystemRepository;
+//import org.wallerlab.yoink.molecular.repositories.StringRepo;
 import org.wallerlab.yoink.regionizer.config.RegionizerConfig;
 import org.wallerlab.yoink.config.BatchConfig;
 import org.wallerlab.yoink.service.jobbuilder.*;
@@ -37,15 +49,8 @@ import org.wallerlab.yoink.service.jobbuilder.*;
  *
  * @author Min Zheng
  */
-@Configuration
-@EnableAutoConfiguration
-@Import({AdaptiveConfig.class,
-        MathConfig.class,
-        RegionizerConfig.class,
-        MolecularConfig.class,
-        DensityConfig.class})
-@ComponentScan("org.wallerlab.yoink")
-public class Yoink {
+@org.springframework.boot.autoconfigure.SpringBootApplication
+public class Yoink /*implements CommandLineRunner */{
     /**
      * use Spring boot to start Yoink application
      *
@@ -53,27 +58,41 @@ public class Yoink {
      * @throws IOException          -{@link java.io.IOException}
      * @throws InterruptedException -{@link java.lang.InterruptedException}
      */
+
     public static void main(String[] args) throws IOException,
             InterruptedException {
-      ApplicationContext   ctx = SpringApplication.run(Yoink.class, args);
+        ApplicationContext ctx = SpringApplication.run(Yoink.class, args);
     }
 
-   public  AnnotationConfigApplicationContext  getBeans(AnnotationConfigApplicationContext appContext){
-     ConfigurableEnvironment environment = new StandardEnvironment();
-                try {
-                        environment.getPropertySources().addFirst(
-                                        new ResourcePropertySource("./application.properties"));
-                } catch (IOException e) {
-                        e.printStackTrace();
-                }
-                appContext.register(BatchConfig.class);
-                appContext.setEnvironment(environment);
-                appContext.refresh();
+    public AnnotationConfigApplicationContext getBeans(AnnotationConfigApplicationContext appContext) {
+        ConfigurableEnvironment environment = new StandardEnvironment();
+        try {
+            environment.getPropertySources().addFirst(
+                    new ResourcePropertySource("./application.properties"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        appContext.register(BatchConfig.class);
+        appContext.setEnvironment(environment);
+        appContext.refresh();
 
-       return appContext;
+        return appContext;
 
+    }
+
+/*    @Autowired
+    MolecularSystemRepository msr;
+
+    @Override
+    public void run(String... args) {
+        System.out.println("Reading MolecularSystems from Database: ");
+        System.out.println("Line 47 " + msr.findAll().get(0).getId());
+        msr.findOne("5810cd19f8b8e405af52f050").getAtoms().forEach(Atom -> System.out.println(Atom.getCoordinate()));
+//        MolecularSystem molecularSystem = msr.findOne("581090c4f8b8e45901bde2ff");
+//        System.out.println(molecularSystem.getMolecules().get(0).getAtoms().get(0).toString());
+        System.out.println(msr.findAll().size());
+
+    }*/
 }
 
 
-
-}

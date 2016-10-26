@@ -15,21 +15,15 @@
  */
 package org.wallerlab.yoink.molecular.service.calculator;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
-import javax.annotation.Resource;
-
 import org.springframework.stereotype.Service;
 import org.wallerlab.yoink.api.model.molecular.Atom;
 import org.wallerlab.yoink.api.model.molecular.Coord;
 import org.wallerlab.yoink.api.model.molecular.Molecule;
 import org.wallerlab.yoink.api.service.Calculator;
 import org.wallerlab.yoink.math.map.MapSorter;
+
+import javax.annotation.Resource;
+import java.util.*;
 
 /**
  * This class is to get the sortedDistances which is a Map(molecule as key and

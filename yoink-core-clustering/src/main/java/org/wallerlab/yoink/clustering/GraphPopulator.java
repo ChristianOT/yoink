@@ -125,7 +125,7 @@ class GraphPopulator<T> {
 	 * 
 	 * returns set of molecules
 	 * 
-	 * @param interaction
+	 * @param interactionSet
 	 *            set
 	 * @return molecule set
 	 */

@@ -26,7 +26,7 @@ import org.wallerlab.yoink.Yoink;
 
 public class TestYoink {
 
-	@Test
+	//@Test
 	public void testYoink() throws Exception {
 
 		File files_in = new File("./inputs");

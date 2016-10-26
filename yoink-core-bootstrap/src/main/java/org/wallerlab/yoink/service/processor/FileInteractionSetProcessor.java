@@ -15,11 +15,6 @@
  */
 package org.wallerlab.yoink.service.processor;
 
-import java.util.Map;
-
-import javax.annotation.Resource;
-import javax.xml.bind.JAXBElement;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.batch.item.ItemProcessor;
@@ -33,6 +28,10 @@ import org.wallerlab.yoink.api.service.bootstrap.Clustering;
 import org.wallerlab.yoink.api.service.bootstrap.JobBuilder;
 import org.wallerlab.yoink.api.service.regionizer.RegionizerMath;
 import org.wallerlab.yoink.service.clustering.InteractionSet;
+
+import javax.annotation.Resource;
+import javax.xml.bind.JAXBElement;
+import java.util.Map;
 
 
 /**

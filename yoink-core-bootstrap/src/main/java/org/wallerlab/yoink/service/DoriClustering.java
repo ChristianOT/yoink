@@ -15,41 +15,18 @@
  */
 package org.wallerlab.yoink.service;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
-import javax.annotation.Resource;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.wallerlab.yoink.api.model.bootstrap.Job;
 import org.wallerlab.yoink.api.model.bootstrap.JobParameter;
-import org.wallerlab.yoink.api.model.cube.GridPoint;
-import org.wallerlab.yoink.api.model.density.DensityPoint;
-import org.wallerlab.yoink.api.model.density.DensityPoint.DensityType;
-import org.wallerlab.yoink.api.model.molecular.Atom;
-import org.wallerlab.yoink.api.model.molecular.Coord;
-import org.wallerlab.yoink.api.model.molecular.Molecule;
-import org.wallerlab.yoink.api.model.molecular.RadialGrid;
-import org.wallerlab.yoink.api.model.regionizer.Region;
-import org.wallerlab.yoink.api.service.Calculator;
-import org.wallerlab.yoink.api.service.Computer;
-import org.wallerlab.yoink.api.service.Factory;
 import org.wallerlab.yoink.api.service.bootstrap.Clustering;
-import org.wallerlab.yoink.api.service.molecular.FilesReader;
 import org.wallerlab.yoink.api.service.regionizer.Partitioner;
-import org.wallerlab.yoink.api.service.regionizer.Regionizer;
 import org.wallerlab.yoink.clustering.InteractionTriple;
 import org.wallerlab.yoink.clustering.LouvainClusteringFacade;
-import org.wallerlab.yoink.molecular.domain.SimpleRadialGrid;
-import org.wallerlab.yoink.regionizer.partitioner.DensityPartitioner;
-import org.wallerlab.yoink.service.clustering.InteractionSet;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * This class is to build a graph based on DORI interaction(yes or no) and do

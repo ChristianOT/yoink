@@ -15,19 +15,18 @@
  */
 package org.wallerlab.yoink.domain;
 
+import org.springframework.stereotype.Component;
+import org.wallerlab.yoink.api.model.bootstrap.Job;
+import org.wallerlab.yoink.api.model.bootstrap.JobParameter;
+import org.wallerlab.yoink.api.model.molecular.MolecularSystem;
+import org.wallerlab.yoink.api.model.regionizer.Region;
+import org.xml_cml.schema.Cml;
+
+import javax.xml.bind.JAXBElement;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-
-import javax.xml.bind.JAXBElement;
-
-import org.springframework.stereotype.Component;
-import org.wallerlab.yoink.api.model.bootstrap.JobParameter;
-import org.wallerlab.yoink.api.model.bootstrap.Job;
-import org.wallerlab.yoink.api.model.molecular.MolecularSystem;
-import org.wallerlab.yoink.api.model.regionizer.Region;
-import org.xml_cml.schema.Cml;
 
 /**
  * the domain model for job in adaptive qm/mm partitioning

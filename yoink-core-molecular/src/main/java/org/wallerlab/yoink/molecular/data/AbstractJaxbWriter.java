@@ -16,12 +16,12 @@
 package org.wallerlab.yoink.molecular.data;
 
 
+import org.springframework.stereotype.Service;
+import org.wallerlab.yoink.api.service.molecular.FilesWriter;
+
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
-
-import org.springframework.stereotype.Service;
-import org.wallerlab.yoink.api.service.molecular.FilesWriter;
 
 /**
  * this class is to use jaxb to write an object out.

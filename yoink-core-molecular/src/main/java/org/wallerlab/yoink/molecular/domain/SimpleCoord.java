@@ -17,8 +17,6 @@ package org.wallerlab.yoink.molecular.domain;
 
 import org.wallerlab.yoink.api.model.molecular.Coord;
 import org.wallerlab.yoink.api.service.math.Vector;
-import org.wallerlab.yoink.math.linear.CommonsVector3D;
-import org.wallerlab.yoink.math.linear.SimpleVector3DFactory;
 
 /**
  * this domain model of coordinate stores the information of coordinate in the
@@ -29,7 +27,7 @@ import org.wallerlab.yoink.math.linear.SimpleVector3DFactory;
 
 public class SimpleCoord implements Coord {
 
-	private Vector coords;
+	public Vector coords;
 
 	/**
 	 * construct a new simple coord with its coordinate vector

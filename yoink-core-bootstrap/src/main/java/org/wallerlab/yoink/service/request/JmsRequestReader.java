@@ -15,12 +15,12 @@
  */
 package org.wallerlab.yoink.service.request;
 
-import java.util.Optional;
-
 import org.springframework.batch.item.ItemReader;
 import org.springframework.batch.item.NonTransientResourceException;
 import org.springframework.batch.item.ParseException;
 import org.springframework.batch.item.UnexpectedInputException;
+
+import java.util.Optional;
 
 /**
  * this class is for job request, to get all xml files off JMS

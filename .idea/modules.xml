@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-adaptive/yoink-core-adaptive.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-adaptive/yoink-core-adaptive.iml" group="yoink-core-adaptive" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-adaptiveProcessor/yoink-core-adaptiveProcessor.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-adaptiveProcessor/yoink-core-adaptiveProcessor.iml" group="yoink-core-adaptiveProcessor" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-adaptiveProcessor/yoink-core-adaptiveProcessor_jmh.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-adaptiveProcessor/yoink-core-adaptiveProcessor_jmh.iml" group="yoink-core-adaptiveProcessor" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-adaptiveProcessor/yoink-core-adaptiveProcessor_main.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-adaptiveProcessor/yoink-core-adaptiveProcessor_main.iml" group="yoink-core-adaptiveProcessor" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-adaptiveProcessor/yoink-core-adaptiveProcessor_test.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-adaptiveProcessor/yoink-core-adaptiveProcessor_test.iml" group="yoink-core-adaptiveProcessor" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-adaptive/yoink-core-adaptive_jmh.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-adaptive/yoink-core-adaptive_jmh.iml" group="yoink-core-adaptive" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-adaptive/yoink-core-adaptive_main.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-adaptive/yoink-core-adaptive_main.iml" group="yoink-core-adaptive" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-adaptive/yoink-core-adaptive_test.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-adaptive/yoink-core-adaptive_test.iml" group="yoink-core-adaptive" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-api/yoink-core-api.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-api/yoink-core-api.iml" group="yoink-core-api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-api/yoink-core-api_jmh.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-api/yoink-core-api_jmh.iml" group="yoink-core-api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-api/yoink-core-api_main.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-api/yoink-core-api_main.iml" group="yoink-core-api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-api/yoink-core-api_test.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-api/yoink-core-api_test.iml" group="yoink-core-api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-bootstrap/yoink-core-bootstrap.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-bootstrap/yoink-core-bootstrap.iml" group="yoink-core-bootstrap" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-bootstrap/yoink-core-bootstrap_integrationTest.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-bootstrap/yoink-core-bootstrap_integrationTest.iml" group="yoink-core-bootstrap" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-bootstrap/yoink-core-bootstrap_jmh.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-bootstrap/yoink-core-bootstrap_jmh.iml" group="yoink-core-bootstrap" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-bootstrap/yoink-core-bootstrap_main.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-bootstrap/yoink-core-bootstrap_main.iml" group="yoink-core-bootstrap" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-bootstrap/yoink-core-bootstrap_test.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-bootstrap/yoink-core-bootstrap_test.iml" group="yoink-core-bootstrap" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-clustering/yoink-core-clustering.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-clustering/yoink-core-clustering.iml" group="yoink-core-clustering" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-clustering/yoink-core-clustering_jmh.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-clustering/yoink-core-clustering_jmh.iml" group="yoink-core-clustering" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-clustering/yoink-core-clustering_main.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-clustering/yoink-core-clustering_main.iml" group="yoink-core-clustering" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-clustering/yoink-core-clustering_test.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-clustering/yoink-core-clustering_test.iml" group="yoink-core-clustering" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-cube/yoink-core-cube.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-cube/yoink-core-cube.iml" group="yoink-core-cube" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-cube/yoink-core-cube_jmh.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-cube/yoink-core-cube_jmh.iml" group="yoink-core-cube" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-cube/yoink-core-cube_main.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-cube/yoink-core-cube_main.iml" group="yoink-core-cube" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-cube/yoink-core-cube_test.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-cube/yoink-core-cube_test.iml" group="yoink-core-cube" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-density/yoink-core-density.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-density/yoink-core-density.iml" group="yoink-core-density" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-density/yoink-core-density_jmh.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-density/yoink-core-density_jmh.iml" group="yoink-core-density" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-density/yoink-core-density_main.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-density/yoink-core-density_main.iml" group="yoink-core-density" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-density/yoink-core-density_test.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-density/yoink-core-density_test.iml" group="yoink-core-density" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-math/yoink-core-math.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-math/yoink-core-math.iml" group="yoink-core-math" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-math/yoink-core-math_jmh.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-math/yoink-core-math_jmh.iml" group="yoink-core-math" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-math/yoink-core-math_main.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-math/yoink-core-math_main.iml" group="yoink-core-math" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-math/yoink-core-math_test.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-math/yoink-core-math_test.iml" group="yoink-core-math" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-molecular/yoink-core-molecular.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-molecular/yoink-core-molecular.iml" group="yoink-core-molecular" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-molecular/yoink-core-molecular_jmh.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-molecular/yoink-core-molecular_jmh.iml" group="yoink-core-molecular" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-molecular/yoink-core-molecular_main.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-molecular/yoink-core-molecular_main.iml" group="yoink-core-molecular" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-molecular/yoink-core-molecular_test.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-molecular/yoink-core-molecular_test.iml" group="yoink-core-molecular" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-regionizer/yoink-core-regionizer.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-regionizer/yoink-core-regionizer.iml" group="yoink-core-regionizer" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-regionizer/yoink-core-regionizer_jmh.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-regionizer/yoink-core-regionizer_jmh.iml" group="yoink-core-regionizer" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-regionizer/yoink-core-regionizer_main.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-regionizer/yoink-core-regionizer_main.iml" group="yoink-core-regionizer" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core-regionizer/yoink-core-regionizer_test.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core-regionizer/yoink-core-regionizer_test.iml" group="yoink-core-regionizer" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core_jmh.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core_jmh.iml" group="yoink-core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core_main.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core_main.iml" group="yoink-core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yoink-core_test.iml" filepath="$PROJECT_DIR$/.idea/modules/yoink-core_test.iml" group="yoink-core" />
+    </modules>
+  </component>
+</project>

@@ -15,10 +15,6 @@
  */
 package org.wallerlab.yoink.molecular.service.calculator;
 
-import java.util.Set;
-
-import javax.annotation.Resource;
-
 import org.springframework.stereotype.Service;
 import org.wallerlab.yoink.api.model.molecular.Atom;
 import org.wallerlab.yoink.api.model.molecular.Coord;
@@ -27,8 +23,9 @@ import org.wallerlab.yoink.api.service.Computer;
 import org.wallerlab.yoink.api.service.Factory;
 import org.wallerlab.yoink.api.service.math.Vector;
 import org.wallerlab.yoink.math.linear.SimpleVector3DFactory;
-import org.wallerlab.yoink.molecular.domain.SimpleCoord;
-import org.wallerlab.yoink.molecular.domain.SimpleCoordFactory;
+
+import javax.annotation.Resource;
+import java.util.Set;
 
 /**
  * This class is to get the center of mass for a set of molecules. e.g.

@@ -15,9 +15,10 @@
  */
 package org.wallerlab.yoink.molecular.data;
 
-import java.io.File;
-import javax.xml.bind.JAXBException;
 import org.springframework.stereotype.Service;
+
+import javax.xml.bind.JAXBException;
+import java.io.File;
 
 /**
  * this class is to use jaxb to write an object into CML file.

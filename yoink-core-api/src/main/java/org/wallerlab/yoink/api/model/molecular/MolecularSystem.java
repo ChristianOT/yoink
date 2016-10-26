@@ -41,4 +41,8 @@ public interface MolecularSystem {
 	 */
 	 List<Molecule> getMolecules();
 
+	String getId();
+
+	String getNameOfSystem();
+
 }

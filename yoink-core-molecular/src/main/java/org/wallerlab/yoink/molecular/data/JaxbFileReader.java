@@ -15,16 +15,12 @@
  */
 package org.wallerlab.yoink.molecular.data;
 
-import java.io.File;
+import org.springframework.stereotype.Service;
+import org.xml_cml.schema.Cml;
 
-import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.JAXBException;
-import javax.xml.bind.Unmarshaller;
-
-import org.springframework.stereotype.Service;
-import org.wallerlab.yoink.api.service.molecular.FilesReader;
-import org.xml_cml.schema.Cml;
+import java.io.File;
 
 /**
  * this class is to use JAXB to read a file.

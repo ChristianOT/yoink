@@ -15,12 +15,15 @@
  */
 package org.wallerlab.yoink.molecular.domain;
 
-import java.util.List;
-
+//import org.neo4j.ogm.annotation.GraphId;
+//import org.neo4j.ogm.annotation.NodeEntity;
+import org.springframework.data.annotation.Id;
 import org.wallerlab.yoink.api.model.molecular.Atom;
 import org.wallerlab.yoink.api.model.molecular.Coord;
 import org.wallerlab.yoink.api.model.molecular.Molecule;
 import org.wallerlab.yoink.api.model.regionizer.Region;
+
+import java.util.List;
 
 /**
  * the domain model for molecule.
@@ -30,9 +33,12 @@ import org.wallerlab.yoink.api.model.regionizer.Region;
  */
 public class SimpleMolecule implements Molecule {
 
-	private final int index;
+	@Id
+	public Long id;
 
-	private final List<Atom> atoms;
+	private int index;
+
+	private List<Atom> atoms;
 
 	protected Region.Name name;
 
@@ -86,4 +92,11 @@ public class SimpleMolecule implements Molecule {
 
 	}
 
+    @Override
+    public String toString() {
+        return "SimpleMolecule{" +
+                "index=" + index +
+                " atoms=" + atoms.size() +
+                '}';
+    }
 }

@@ -16,9 +16,6 @@
 
 package org.wallerlab.yoink.molecular.domain;
 
-import java.util.List;
-
-import org.wallerlab.yoink.api.model.molecular.Coord;
 import org.wallerlab.yoink.api.model.molecular.RadialGrid;
 
 public class SimpleRadialGrid implements RadialGrid {

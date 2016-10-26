@@ -15,22 +15,21 @@
  */
 package org.wallerlab.yoink.molecular.service.translator;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import javax.xml.bind.JAXBElement;
-
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.wallerlab.yoink.api.model.bootstrap.JobParameter;
 import org.wallerlab.yoink.api.model.regionizer.Region;
 import org.wallerlab.yoink.api.service.adaptive.Smoothner;
-import org.wallerlab.yoink.api.service.molecular.Translator;
 import org.wallerlab.yoink.api.service.molecular.Converter.UnitConverterType;
+import org.wallerlab.yoink.api.service.molecular.Translator;
 import org.wallerlab.yoink.api.service.regionizer.Partitioner;
 import org.xml_cml.schema.Cml;
 import org.xml_cml.schema.Parameter;
 import org.xml_cml.schema.ParameterList;
+
+import javax.xml.bind.JAXBElement;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * this class is to get a Map(JobParameter -

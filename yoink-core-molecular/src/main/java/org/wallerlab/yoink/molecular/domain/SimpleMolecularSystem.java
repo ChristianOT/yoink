@@ -15,12 +15,15 @@
  */
 package org.wallerlab.yoink.molecular.domain;
 
-import java.util.ArrayList;
-import java.util.List;
-
+//import org.neo4j.ogm.annotation.GraphId;
+//import org.neo4j.ogm.annotation.NodeEntity;
+import org.springframework.data.annotation.Id;
 import org.wallerlab.yoink.api.model.molecular.Atom;
 import org.wallerlab.yoink.api.model.molecular.MolecularSystem;
 import org.wallerlab.yoink.api.model.molecular.Molecule;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * the domain model for molecular system.
@@ -30,9 +33,22 @@ import org.wallerlab.yoink.api.model.molecular.Molecule;
  */
 public class SimpleMolecularSystem implements MolecularSystem {
 
-	private final List<Molecule> molecules;
+	@Id
+	public String id;
+
+	private List<Molecule> molecules;
+
+	private String nameOfSystem;
+
+	public SimpleMolecularSystem() {
+	}
 
 	public SimpleMolecularSystem(List<Molecule> molecules) {
+		this.molecules = molecules;
+	}
+
+	public SimpleMolecularSystem(String name, List<Molecule> molecules) {
+		this.nameOfSystem=name;
 		this.molecules = molecules;
 	}
 
@@ -50,6 +66,10 @@ public class SimpleMolecularSystem implements MolecularSystem {
 		return atoms;
 	}
 
+	public String getId() {
+		return id;
+	}
+
 	/**
 	 * get all molecules in molecular system.
 	 */
@@ -58,4 +78,20 @@ public class SimpleMolecularSystem implements MolecularSystem {
 		return this.molecules;
 	}
 
+	public String getNameOfSystem() {
+		return nameOfSystem;
+	}
+
+	public void setNameOfSystem(String nameOfSystem) {
+		this.nameOfSystem = nameOfSystem;
+	}
+
+	@Override
+	public String toString() {
+		return "SimpleMolecularSystem{" +
+				"id=" + id +
+				", molecules=" + molecules +
+				", nameOfSystem='" + nameOfSystem + '\'' +
+				'}';
+	}
 }

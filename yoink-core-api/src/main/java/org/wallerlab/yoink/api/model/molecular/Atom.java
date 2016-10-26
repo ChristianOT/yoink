@@ -15,69 +15,77 @@
  */
 package org.wallerlab.yoink.api.model.molecular;
 
+import java.math.BigInteger;
+
 /**
  * this interface is for domain model atom
- * 
- * @author Min Zheng
  *
+ * @author Min Zheng
  */
 public interface Atom {
 
-	/**
-	 * get the element of this atom
-	 * 
-	 * @return element of this atom, -
-	 *         {@link org.wallerlab.yoink.api.model.molecular.Element}
-	 */
-	Element getElementType();
+    /**
+     * get the element of this atom
+     *
+     * @return element of this atom, -
+     * {@link org.wallerlab.yoink.api.model.molecular.Element}
+     */
+    Element getElementType();
 
-	/**
-	 * get the index of this atom in molecular system
-	 * 
-	 * @return atomic index in molecular system -{@link java.lang.Integer}
-	 */
-	int getIndex();
-	
-
-	/**
-	 * get the radial grid 
-	 * 
-	 * @return radial grids for density -{@link org.wallerlab.yoink.api.model.molecular.RadialGrid}
-	 */
-	RadialGrid getRadialGrid();
-	
-
-	/**
-	 * set the radial grid 
-	 *
-	 * @param radial_grid the grid to be used
-	 * 
-	 */
-	void setRadialGrid(RadialGrid radial_grid);
+    /**
+     * get the index of this atom in molecular system
+     *
+     * @return atomic index in molecular system -{@link java.lang.Integer}
+     */
+    int getIndex();
 
 
-	/**
-	 * get the coordinate of this atom
-	 * @return {@link org.wallerlab.yoink.api.model.molecular.Coord}
-	 */
-	Coord getCoordinate();
+    /**
+     * get the radial grid
+     *
+     * @return radial grids for density -{@link org.wallerlab.yoink.api.model.molecular.RadialGrid}
+     */
+    RadialGrid getRadialGrid();
 
-	/**
-	 * get the x coordinate of this atom
-	 * @return {@link java.lang.Double}
-	 */
-	double getX3();
 
-	/**
-	 * get the y coordinate of this atom
-	 * @return {@link java.lang.Double}
-	 */
-	double getY3();
+    /**
+     * set the radial grid
+     *
+     * @param radial_grid the grid to be used
+     */
+    void setRadialGrid(RadialGrid radial_grid);
 
-	/**
-	 * get the z coordinate of this atom
-	 * @return {@link java.lang.Double}
-	 */
-	double getZ3();
+
+    /**
+     * get the coordinate of this atom
+     *
+     * @return {@link org.wallerlab.yoink.api.model.molecular.Coord}
+     */
+    Coord getCoordinate();
+
+    /**
+     * get the x coordinate of this atom
+     *
+     * @return {@link java.lang.Double}
+     */
+    double getX3();
+
+    /**
+     * get the y coordinate of this atom
+     *
+     * @return {@link java.lang.Double}
+     */
+    double getY3();
+
+    /**
+     * get the z coordinate of this atom
+     *
+     * @return {@link java.lang.Double}
+     */
+    double getZ3();
+
+    Long getId();
+
+    int getSeqId();
 
 }

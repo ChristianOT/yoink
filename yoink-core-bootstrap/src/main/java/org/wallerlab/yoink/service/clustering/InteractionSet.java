@@ -15,16 +15,6 @@
  */
 package org.wallerlab.yoink.service.clustering;
 
-import java.util.Arrays;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
-import javax.annotation.Resource;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.wallerlab.yoink.api.model.bootstrap.Job;
@@ -43,6 +33,9 @@ import org.wallerlab.yoink.api.service.Factory;
 import org.wallerlab.yoink.api.service.molecular.FilesReader;
 import org.wallerlab.yoink.api.service.regionizer.Partitioner;
 import org.wallerlab.yoink.regionizer.partitioner.DensityPartitioner;
+
+import javax.annotation.Resource;
+import java.util.*;
 
 /**
  * This class is to get all pairs having interaction(yes or no) base on DORI analysis.

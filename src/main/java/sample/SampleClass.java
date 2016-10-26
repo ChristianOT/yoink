@@ -15,7 +15,7 @@ public class SampleClass {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
-	System.out.println("waiting for yoink");		
+	System.out.println("waiting for yoink");
 	try {
 		proc.waitFor();
 	} catch (InterruptedException e) {
@@ -24,7 +24,7 @@ public class SampleClass {
 	}
 	System.out.println("Yoink done");
 
-			
+
 	// Then retreive the process output
 	InputStream in = proc.getInputStream();
 	InputStream err = proc.getErrorStream();

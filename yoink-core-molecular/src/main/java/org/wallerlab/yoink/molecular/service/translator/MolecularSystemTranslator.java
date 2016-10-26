@@ -15,35 +15,29 @@
  */
 package org.wallerlab.yoink.molecular.service.translator;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
-import javax.annotation.Resource;
-import javax.xml.bind.JAXBElement;
-
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import org.wallerlab.yoink.api.model.molecular.Atom;
-import org.wallerlab.yoink.api.model.molecular.Coord;
-import org.wallerlab.yoink.api.model.molecular.Element;
-import org.wallerlab.yoink.api.model.molecular.MolecularSystem;
-import org.wallerlab.yoink.api.model.molecular.Molecule;
+import org.wallerlab.yoink.api.model.molecular.*;
 import org.wallerlab.yoink.api.model.regionizer.Region;
 import org.wallerlab.yoink.api.service.Computer;
 import org.wallerlab.yoink.api.service.Factory;
 import org.wallerlab.yoink.api.service.math.Vector;
-import org.wallerlab.yoink.api.service.molecular.Translator;
 import org.wallerlab.yoink.api.service.molecular.Converter.UnitConverterType;
+import org.wallerlab.yoink.api.service.molecular.Translator;
 import org.wallerlab.yoink.math.linear.SimpleVector3DFactory;
 import org.wallerlab.yoink.molecular.domain.SimpleAtom;
-import org.wallerlab.yoink.molecular.domain.SimpleCoordFactory;
 import org.wallerlab.yoink.molecular.domain.SimpleMolecularSystem;
 import org.wallerlab.yoink.molecular.domain.SimpleMolecule;
 import org.xml_cml.schema.AtomArray;
 import org.xml_cml.schema.Cml;
 import org.xml_cml.schema.MoleculeList;
+
+import javax.annotation.Resource;
+import javax.xml.bind.JAXBElement;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 /**
  * This class is to translate JAXB Cml to MolecularSystem model.

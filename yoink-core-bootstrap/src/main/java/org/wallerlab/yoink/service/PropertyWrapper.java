@@ -15,28 +15,24 @@
  */
 package org.wallerlab.yoink.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
+import org.wallerlab.yoink.api.model.bootstrap.Job;
+import org.wallerlab.yoink.api.model.bootstrap.JobParameter;
+import org.wallerlab.yoink.api.model.molecular.Molecule;
+import org.wallerlab.yoink.api.model.regionizer.Region;
+import org.wallerlab.yoink.api.service.bootstrap.Wrapper;
+import org.wallerlab.yoink.api.service.math.Vector;
+import org.wallerlab.yoink.api.service.molecular.FilesWriter;
+import org.xml_cml.schema.*;
+
+import javax.xml.bind.JAXBElement;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import javax.xml.bind.JAXBElement;
-import org.springframework.stereotype.Service;
-import org.wallerlab.yoink.api.model.bootstrap.JobParameter;
-import org.wallerlab.yoink.api.model.bootstrap.Job;
-import org.wallerlab.yoink.api.service.math.Vector;
-import org.wallerlab.yoink.api.service.molecular.FilesWriter;
-import org.wallerlab.yoink.api.model.molecular.Molecule;
-import org.wallerlab.yoink.api.model.regionizer.Region;
-import org.wallerlab.yoink.api.service.bootstrap.Wrapper;
-import org.xml_cml.schema.Cml;
-import org.xml_cml.schema.Gradient;
-import org.xml_cml.schema.MoleculeList;
-import org.xml_cml.schema.ObjectFactory;
-import org.xml_cml.schema.Property;
-import org.xml_cml.schema.PropertyList;
-import org.xml_cml.schema.Scalar;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+import java.lang.Object;
 
 /**
  * this class is to wrap adaptive qmmm result to JAXB element PropertyList

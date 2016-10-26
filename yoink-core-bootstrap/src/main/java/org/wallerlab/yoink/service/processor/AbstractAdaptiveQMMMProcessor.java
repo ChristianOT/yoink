@@ -15,10 +15,6 @@
  */
 package org.wallerlab.yoink.service.processor;
 
-import java.util.List;
-import java.util.Map;
-
-import javax.annotation.Resource;
 import org.springframework.batch.item.ItemProcessor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.wallerlab.yoink.api.model.bootstrap.Job;
@@ -30,6 +26,10 @@ import org.wallerlab.yoink.api.service.adaptive.Smoothner;
 import org.wallerlab.yoink.api.service.bootstrap.Wrapper;
 import org.wallerlab.yoink.api.service.regionizer.Regionizer;
 import org.wallerlab.yoink.api.service.regionizer.RegionizerMath;
+
+import javax.annotation.Resource;
+import java.util.List;
+import java.util.Map;
 
 /**
  * This class is to set up and execute adaptive QM/MM partitioning.

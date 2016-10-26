@@ -16,23 +16,14 @@
 
 package org.wallerlab.yoink.service.jobbuilder;
 
-import java.io.File;
-import java.util.List;
-import java.util.Map;
+import org.springframework.stereotype.Service;
+import org.wallerlab.yoink.api.model.bootstrap.Job;
+import org.wallerlab.yoink.api.service.molecular.FilesReader;
+import org.wallerlab.yoink.domain.AdaptiveQMMMJob;
+import org.xml_cml.schema.Cml;
 
 import javax.annotation.Resource;
 import javax.xml.bind.JAXBElement;
-
-import org.springframework.batch.item.ItemProcessor;
-import org.springframework.stereotype.Service;
-import org.wallerlab.yoink.api.model.bootstrap.JobParameter;
-import org.wallerlab.yoink.api.model.bootstrap.Job;
-import org.wallerlab.yoink.api.service.molecular.FilesReader;
-import org.wallerlab.yoink.api.model.molecular.MolecularSystem;
-import org.wallerlab.yoink.api.service.bootstrap.JobBuilder;
-import org.wallerlab.yoink.api.service.molecular.Translator;
-import org.wallerlab.yoink.domain.AdaptiveQMMMJob;
-import org.xml_cml.schema.Cml;
 
 /**
  * this class is to read in all inputs (like molecular system and parameters)

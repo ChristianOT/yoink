@@ -16,14 +16,6 @@
 
 package org.wallerlab.yoink.molecular.data;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
-import javax.annotation.Resource;
-
 import org.apache.commons.io.FileUtils;
 import org.springframework.stereotype.Service;
 import org.wallerlab.yoink.api.model.molecular.RadialGrid;
@@ -31,7 +23,12 @@ import org.wallerlab.yoink.api.service.math.Matrix;
 import org.wallerlab.yoink.api.service.molecular.FilesReader;
 import org.wallerlab.yoink.math.constants.Constants;
 import org.wallerlab.yoink.math.linear.SimpleMatrixFactory;
-import org.wallerlab.yoink.molecular.domain.SimpleRadialGrid;
+
+import javax.annotation.Resource;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class RadialGridReader implements FilesReader<RadialGrid, String> {

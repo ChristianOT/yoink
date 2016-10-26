@@ -1,2 +1,3 @@
 dependencies {
 }
+mainClassName = 'org.wallerlab.yoink.Yoink'

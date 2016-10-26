@@ -10,13 +10,13 @@ import com.sun.xml.internal.bind.v2.runtime.IllegalAnnotationsException
 import javax.xml.bind.JAXBElement;
 import org.xml_cml.schema.MoleculeList;
 
-class JaxbStringReaderSpec extends Specification{
+class JaxbStringReaderSpec extends Specification {
 
-	def "test method read()"(){
+    def "test method read()"() {
 
-		when:"jaxb reader reads from a string"
-			def reader= new JaxbStringReader()
-			def input = """<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+        when: "jaxb reader reads from a string"
+        def reader = new JaxbStringReader()
+        def input = """<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cml xmlns="http://www.xml-cml.org/schema">
     <moleculeList>
         <molecule id="QM_CORE_FIXED">
@@ -55,13 +55,13 @@ class JaxbStringReaderSpec extends Specification{
         <parameter name="OUTPUT_FOLDER" value="./outputs"/>
     </parameterList>
 </cml>"""
-			
-			JAXBElement<Cml> msr= reader.read(input,new Cml())
-			JAXBElement mlJAXB =((((JAXBElement)msr.getValue().getAnyCmlOrAnyOrAny().get(0))))
-			MoleculeList ml= mlJAXB.getValue()
-		then:"assert the content in the given file"
-			msr.getValue().getAnyCmlOrAnyOrAny().size()==2
-			ml.getAnyCmlOrAnyOrAny().size()==2
-	}	
-	
+
+        JAXBElement<Cml> msr = reader.read(input, new Cml())
+        JAXBElement mlJAXB = ((((JAXBElement) msr.getValue().getAnyCmlOrAnyOrAny().get(0))))
+        MoleculeList ml = mlJAXB.getValue()
+        then: "assert the content in the given file"
+        msr.getValue().getAnyCmlOrAnyOrAny().size() == 2
+        ml.getAnyCmlOrAnyOrAny().size() == 2
+    }
+
 }

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="yoink-core-adaptive_jmh" target="1.8" />
+      <module name="yoink-core-adaptive_main" target="1.8" />
+      <module name="yoink-core-adaptive_test" target="1.8" />
+      <module name="yoink-core-adaptiveProcessor_jmh" target="1.8" />
+      <module name="yoink-core-adaptiveProcessor_main" target="1.8" />
+      <module name="yoink-core-adaptiveProcessor_test" target="1.8" />
+      <module name="yoink-core-api_jmh" target="1.8" />
+      <module name="yoink-core-api_main" target="1.8" />
+      <module name="yoink-core-api_test" target="1.8" />
+      <module name="yoink-core-bootstrap_integrationTest" target="1.8" />
+      <module name="yoink-core-bootstrap_jmh" target="1.8" />
+      <module name="yoink-core-bootstrap_main" target="1.8" />
+      <module name="yoink-core-bootstrap_test" target="1.8" />
+      <module name="yoink-core-clustering_jmh" target="1.8" />
+      <module name="yoink-core-clustering_main" target="1.8" />
+      <module name="yoink-core-clustering_test" target="1.8" />
+      <module name="yoink-core-cube_jmh" target="1.8" />
+      <module name="yoink-core-cube_main" target="1.8" />
+      <module name="yoink-core-cube_test" target="1.8" />
+      <module name="yoink-core-density_jmh" target="1.8" />
+      <module name="yoink-core-density_main" target="1.8" />
+      <module name="yoink-core-density_test" target="1.8" />
+      <module name="yoink-core-masterNode_jmh" target="1.8" />
+      <module name="yoink-core-masterNode_main" target="1.8" />
+      <module name="yoink-core-masterNode_test" target="1.8" />
+      <module name="yoink-core-materNode_jmh" target="1.8" />
+      <module name="yoink-core-materNode_main" target="1.8" />
+      <module name="yoink-core-materNode_test" target="1.8" />
+      <module name="yoink-core-math_jmh" target="1.8" />
+      <module name="yoink-core-math_main" target="1.8" />
+      <module name="yoink-core-math_test" target="1.8" />
+      <module name="yoink-core-molecular_jmh" target="1.8" />
+      <module name="yoink-core-molecular_main" target="1.8" />
+      <module name="yoink-core-molecular_test" target="1.8" />
+      <module name="yoink-core-regionizer_jmh" target="1.8" />
+      <module name="yoink-core-regionizer_main" target="1.8" />
+      <module name="yoink-core-regionizer_test" target="1.8" />
+      <module name="yoink-core_jmh" target="1.8" />
+      <module name="yoink-core_main" target="1.8" />
+      <module name="yoink-core_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -15,10 +15,13 @@
  */
 package org.wallerlab.yoink.molecular.domain;
 
+import org.springframework.data.annotation.Id;
 import org.wallerlab.yoink.api.model.molecular.Atom;
 import org.wallerlab.yoink.api.model.molecular.Coord;
 import org.wallerlab.yoink.api.model.molecular.Element;
 import org.wallerlab.yoink.api.model.molecular.RadialGrid;
+
+import java.math.BigInteger;
 
 /**
  * the domain model of atom
@@ -28,13 +31,28 @@ import org.wallerlab.yoink.api.model.molecular.RadialGrid;
  */
 public class SimpleAtom implements Atom {
 
-	protected final int index;
+	@Id
+	public Long id;						// for storing in database
 
-	protected final Element elementType;
+	protected int index;
 
-	private final Coord coordinate;
+	protected Element elementType;
+
+	public Coord coordinate;
 
 	private RadialGrid radial_grid;
+
+	private int seqId;					// necessary to build molecules(atoms of the same molecule have the same seqId)
+
+	public SimpleAtom() {
+	}
+
+	public SimpleAtom(int index, Element elementType, Coord coordinate, int seqId) {
+		this.index = index;
+		this.elementType = elementType;
+		this.coordinate = coordinate;
+		this.seqId = seqId;
+	}
 
 	public SimpleAtom(int index, Element elementType, Coord coordinate) {
 		this.index = index;
@@ -90,6 +108,26 @@ public class SimpleAtom implements Atom {
 		return this.coordinate.getCoords().getZ();
 	}
 
+//****************************************
+
+	/**
+	 * get the database id of the atom
+	 */
+	@Override
+	public Long getId() {
+		return id;
+	}
+
+	/**
+	 * get the seqId of the atom
+	 * @return
+	 */
+	@Override
+	public int getSeqId() {
+		return seqId;
+	}
+//****************************************
+
 	/**
 	 * set the radial grid
 	 */
@@ -106,5 +144,17 @@ public class SimpleAtom implements Atom {
 	public void setRadialGrid(RadialGrid radial_grid) {
 
 		this.radial_grid=radial_grid;
+	}
+
+	@Override
+	public String toString() {
+		return "SimpleAtom{" +
+				"id=" + id +
+				", index=" + index +
+				", elementType=" + elementType +
+				", coordinate=" + coordinate +
+				", radial_grid=" + radial_grid +
+				", seqId=" + seqId +
+				'}';
 	}
 }

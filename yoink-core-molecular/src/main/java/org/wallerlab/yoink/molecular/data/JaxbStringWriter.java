@@ -15,9 +15,10 @@
  */
 package org.wallerlab.yoink.molecular.data;
 
-import java.io.StringWriter;
-import javax.xml.bind.JAXBException;
 import org.springframework.stereotype.Service;
+
+import javax.xml.bind.JAXBException;
+import java.io.StringWriter;
 
 /**
  * this class is to use jaxb to write an object into a string.

@@ -15,11 +15,6 @@
  */
 package org.wallerlab.yoink.service.request;
 
-import java.io.File;
-import java.io.FileFilter;
-import java.util.Arrays;
-import java.util.List;
-
 import org.apache.commons.io.filefilter.WildcardFileFilter;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -29,6 +24,11 @@ import org.springframework.batch.item.ParseException;
 import org.springframework.batch.item.UnexpectedInputException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+
+import java.io.File;
+import java.io.FileFilter;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * this class is for job request, to get all xml files in a folder
