@@ -1,11 +1,11 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="Directory '.../yoink-core-bootstrap/src/test/groovy/org/wallerlab/yoink - [yoink-core-bootstrap_test]'" />
-    <option name="defaultScopeName" value="Directory '.../yoink-core-bootstrap/src/test/groovy/org/wallerlab/yoink - [yoink-core-bootstrap_test]'" />
+    <option name="customScope" value="Directory '.../yoink-core-bootstrap - [yoink-core-bootstrap]'" />
+    <option name="defaultScopeName" value="Directory '.../yoink-core-bootstrap - [yoink-core-bootstrap]'" />
     <option name="localCaseSensitive" value="true" />
     <option name="localRegularExpressions" value="true" />
     <option name="LOCAL_CASE_SENSITIVE_SEARCH" value="true" />
     <option name="LOCAL_REGULAR_EXPRESSIONS" value="true" />
-    <option name="SEARCH_SCOPE" value="Directory '.../yoink-core-bootstrap/src/test/groovy/org/wallerlab/yoink - [yoink-core-bootstrap_test]'" />
+    <option name="SEARCH_SCOPE" value="Directory '.../yoink-core-bootstrap - [yoink-core-bootstrap]'" />
   </component>
 </application>
