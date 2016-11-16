@@ -3,6 +3,7 @@
     <extensionMap>
       <mapping pattern="Command" type="PLAIN_TEXT" />
       <mapping pattern="hello-world" type="PLAIN_TEXT" />
+      <mapping pattern="TEST_OUT" type="PLAIN_TEXT" />
       <mapping pattern="testFile" type="PLAIN_TEXT" />
       <mapping ext="jnilib" type="PLAIN_TEXT" />
       <mapping pattern="applicationProperties" type="Properties" />
