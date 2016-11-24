@@ -7,6 +7,7 @@
       <mapping pattern="TEST_OUT" type="PLAIN_TEXT" />
       <mapping pattern="testFile" type="PLAIN_TEXT" />
       <mapping ext="jnilib" type="PLAIN_TEXT" />
+      <mapping ext="gz" type="PLAIN_TEXT" />
       <mapping pattern="applicationProperties" type="Properties" />
     </extensionMap>
   </component>
