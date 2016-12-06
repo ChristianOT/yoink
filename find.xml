@@ -1,11 +1,11 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="Directory '.../MasterNode-yoink/src/main/java/org/forYoink/api/model - [MasterNode-yoink_main]'" />
-    <option name="defaultScopeName" value="Directory '.../MasterNode-yoink/src/main/java/org/forYoink/api/model - [MasterNode-yoink_main]'" />
+    <option name="customScope" value="Directory '.../MasterNode-yoink/src/main/java/org/forYoink/api/service - [MasterNode-yoink_main]'" />
+    <option name="defaultScopeName" value="Directory '.../MasterNode-yoink/src/main/java/org/forYoink/api/service - [MasterNode-yoink_main]'" />
     <option name="localCaseSensitive" value="true" />
     <option name="localRegularExpressions" value="true" />
     <option name="LOCAL_CASE_SENSITIVE_SEARCH" value="true" />
     <option name="LOCAL_REGULAR_EXPRESSIONS" value="true" />
-    <option name="SEARCH_SCOPE" value="Directory '.../MasterNode-yoink/src/main/java/org/forYoink/api/model - [MasterNode-yoink_main]'" />
+    <option name="SEARCH_SCOPE" value="Directory '.../MasterNode-yoink/src/main/java/org/forYoink/api/service - [MasterNode-yoink_main]'" />
   </component>
 </application>
